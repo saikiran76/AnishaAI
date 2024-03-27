@@ -3,6 +3,8 @@ import os
 from langchain.llms.bedrock import Bedrock
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
+from langchain.memory import ChatMemory
+from langchain.schema import AIMessage, HumanMessage, SystemMessage
 
 #2a Write a function for invoking model- client connection with Bedrock with profile, model_id & Inference params- model_kwargs
 def demo_chatbot():
